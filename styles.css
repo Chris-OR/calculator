@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* 
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 32px;
+}
+
+.container {
+    padding: 10% 10%;
+}
+
+.calc-input {
+    display: flex;
+    padding: 16px;
+}
+
+.keypad {
+    /* flex: 1 1 auto; 
+}
+
+.functions {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1 1 auto;
+    align-items: right;
+    justify-content: space-between; 
+}
+
+
+button {
+    width: 30%;
+    height: 30%;
+    flex: 1 1 auto;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    font-size: 32px;
+    margin: 2px;
+}
+
+.functions button {
+    background-color: orange;
+}
+
+.output {
+    text-align: right;
+}
+
+*/
+
+
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 10%;
+}
+
+.calc-input {
+    padding: 18px;
+    display: grid;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    /* grid-auto-flow: dense;  */
+}
+
+.keypad {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    padding: 1rem;
+}
+
+.functions {
+    display: grid;
+    grid-gap: 0.1rem;
+    grid-template-columns: none;
+    grid-auto-flow: dense;
+    padding: 0.5rem;
+}
+
+button {
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border-radius: 50px;
+    font-size: 32px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+}
+
+#zero {
+    grid-column: span 2;
+}
+
+.functions button {
+    background-color: orange;
+}
+
+.output {
+    text-align: center;
+}
+
+.clicked {
+    opacity: 0.6;
+}
